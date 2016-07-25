@@ -12,12 +12,12 @@ function time() {
 	var clock = today.getHours() +':' + today.getMinutes() + ':' + today.getSeconds() 
 
 	var date = today.toDateString()
+	
 	//If Statments...
-		//if statments for TIME
 			//if for hours
 			if (hours > 12) {
 				hours -= 12
-			}else if (hours > 10) {
+			}else if (hours < 10) {
 				hours = '0' + hours
 			}else if (hours === 0) {
 				hours = 12
@@ -32,10 +32,9 @@ function time() {
 				seconds = '0' + seconds
 			}
 
-		//if statments for DATE
-			//if for day
 
 	//end of if statments
+
 
 	//creating spans and classes
 
@@ -46,15 +45,11 @@ function time() {
 
 	// sitting the output divs
 	var myClock = document.getElementById('myClock')
-	var dayDiv =document.getElementById('day')
-	var monthDiv = document.getElementById('month')
-	var iconDiv = document.getElementById('icon')
-
-
+	
 
 	// the Action for output
 	myClock.innerHTML = hoursSpan + ':' + minutesSpan + ':' + secondsSpan + dateSpan
-	dayDiv.innerHTML = date
+
 	//time out function for the seconds to move!
 	setTimeout(function() {
 	time() }, 1000);
