@@ -1,15 +1,48 @@
+* {
+	text-align: center;
+	background-color: black;
+}
 
 .clock {
-	text-align: center;
+	font-family: 'Merriweather', serif;
 	font-size: 6em;
-    margin-top: 3em;
+    margin: 3em auto;
+    width: 50%;
+    text-align: center;
+    background-color: #160505;
+    color: white;
+    padding: 30px;
+    padding-bottom: 13px;
+    border-radius: 30px;
+    border: 3px solid white;
+    box-shadow: 3px 3px 27px #ac9e9e;
+}
+.hours, .minutes, .seconds {
+	border: 3px solid red;
+	border-radius: 10px;
+	padding: 15px;
 }
 .hours {
-
+	
 }
 .minutes {
 
 }
 .seconds {
-	
+
+}
+.date {
+	font-family: 'Lobster', cursive;
+	font-size: 0.2em;
+	display: block;
+	margin-top: 20px;
+	color: #a7a7a7;
+	background-color: #160505;
+
+}
+
+@media (max-width: 340px) {
+	.clock {
+		font-size: 4em;
+	}
 }
