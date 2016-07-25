@@ -6,7 +6,7 @@
 .clock {
 	font-family: 'Merriweather', serif;
 	font-size: 6em;
-    margin: 3em auto;
+    margin: 350px auto;
     width: 50%;
     text-align: center;
     background-color: #160505;
@@ -40,9 +40,33 @@
 	background-color: #160505;
 
 }
+footer {
 
-@media (max-width: 340px) {
+}
+footer p {
+	color: #a7a7a7;
+}
+
+@media (max-width: 1140px) {
 	.clock {
 		font-size: 4em;
+	}
+}
+@media (max-width: 810px) {
+	.clock {
+		font-size: 3em;
+		width: 60%;
+	}
+}
+@media (max-width: 600px) {
+	.clock {
+		font-size: 2em;
+		width: 90%;
+	}
+}
+@media (max-width: 340px) {
+	.clock {
+		font-size: 1em;
+		width: 95%;
 	}
 }
